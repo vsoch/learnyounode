@@ -1,7 +1,6 @@
 var net = require('http');
 var fs = require('fs');
 var url = require('url');
-var util = require('util');
 
 // HTTP JSON API SERVER (Exercise 13 of 13)  
    
