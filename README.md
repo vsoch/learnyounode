@@ -1,3 +1,3 @@
-# learnyournode
+# learnyounode
 
 Playing around with NodeJS!
