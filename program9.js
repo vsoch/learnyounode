@@ -5,15 +5,19 @@ String.prototype.repeat = function(number){
     return new Array(number + 1).join(this);
 }
 
-function pad(padstr,zeros){
+function pad(padstr,zeros,padchar){
     /**
      * pad adds a certain number of zeros to a string 
      * format
+     * @param padstr the string to be padded with zeros
+     * @param zeros the number of zeros to pad
+     * @param padchar the character to use to pad
      */   
     zeros = zeros || 1;
+    padchar = padchar || "0"
     padstr = padstr.toString();
     if (padstr.length==1){
-        padstr = "0".repeat(zeros) + padstr;
+        padstr = padchar.repeat(zeros) + padstr;
     } 
     return padstr  
 }
